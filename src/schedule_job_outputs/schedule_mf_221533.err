@@ -1,0 +1,12 @@
+als_parallel_dynamic2.cpp: In function ‘int main(int, char**)’:
+als_parallel_dynamic2.cpp:31:9: warning: unused variable ‘nthreads’ [-Wunused-variable]
+   31 |     int nthreads = omp_get_num_threads();
+      |         ^~~~~~~~
+als_parallel_dynamic128.cpp: In function ‘int main(int, char**)’:
+als_parallel_dynamic128.cpp:31:9: warning: unused variable ‘nthreads’ [-Wunused-variable]
+   31 |     int nthreads = omp_get_num_threads();
+      |         ^~~~~~~~
+als_parallel_guided.cpp: In function ‘int main(int, char**)’:
+als_parallel_guided.cpp:31:9: warning: unused variable ‘nthreads’ [-Wunused-variable]
+   31 |     int nthreads = omp_get_num_threads();
+      |         ^~~~~~~~

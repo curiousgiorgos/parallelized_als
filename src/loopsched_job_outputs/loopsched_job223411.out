@@ -1,0 +1,18 @@
+rm -f als_sequential als_parallel als_papi als_parallel_nosimd als_parallel_static als_parallel_dynamic16 als_parallel_dynamic128 als_parallel_guided als_parallel_dynamic32 als_parallel_dynamic64 als_parallel_static2 als_parallel_full als_parallel_nofma als_parallel_nosimd als_parallel_singlefma
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_dynamic16 loop_scheduling_trials/als_parallel_dynamic16.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_dynamic32 loop_scheduling_trials/als_parallel_dynamic32.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_dynamic64 loop_scheduling_trials/als_parallel_dynamic64.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_dynamic128 loop_scheduling_trials/als_parallel_dynamic128.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_guided loop_scheduling_trials/als_parallel_guided.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_static loop_scheduling_trials/als_parallel_static.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_static2 loop_scheduling_trials/als_parallel_static2.cpp
+Dynamic 16:
+Dynamic 16: Iterations completed in 1135.32s
+Dynamic 16: Iterations completed in 548.82s
+Dynamic 16: Iterations completed in 318.12s
+Dynamic 16: Iterations completed in 166.74s
+Dynamic 16: Iterations completed in 85.87s
+
+Dynamic 32:
+Completed data load 
+Dynamic 32: Iterations completed in 1142.17s

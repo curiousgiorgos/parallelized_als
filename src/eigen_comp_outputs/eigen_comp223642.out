@@ -1,0 +1,17 @@
+make: `als_eigen' is up to date.
+make: `als_parallel' is up to date.
+Eigen
+Iterations completed in 126.18s
+Iterations completed in 64.34s
+Iterations completed in 33.02s
+Iterations completed in 18.03s
+Iterations completed in 9.68s
+Iterations completed in 6.13s
+
+Parallel LU
+Iterations completed in 267.22s
+Iterations completed in 133.00s
+Iterations completed in 69.49s
+Iterations completed in 37.79s
+Iterations completed in 20.15s
+Iterations completed in 10.30s

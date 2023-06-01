@@ -1,0 +1,63 @@
+In file included from als_parallel.cpp:4:
+lu_parallel.h: In function ‘void lu_fmadd_backward(int, int, MatrixType&, Eigen::VectorXf&, Eigen::VectorXf&)’:
+lu_parallel.h:151:16: warning: unused variable ‘r_2’ [-Wunused-variable]
+  151 |         __m256 r_2;
+      |                ^~~
+lu_parallel.h:152:16: warning: unused variable ‘r_3’ [-Wunused-variable]
+  152 |         __m256 r_3;
+      |                ^~~
+lu_parallel.h:153:16: warning: unused variable ‘r_4’ [-Wunused-variable]
+  153 |         __m256 r_4;
+      |                ^~~
+lu_parallel.h:154:16: warning: unused variable ‘r_5’ [-Wunused-variable]
+  154 |         __m256 r_5;
+      |                ^~~
+lu_parallel.h:155:16: warning: unused variable ‘r_6’ [-Wunused-variable]
+  155 |         __m256 r_6;
+      |                ^~~
+lu_parallel.h:156:16: warning: unused variable ‘r_7’ [-Wunused-variable]
+  156 |         __m256 r_7;
+      |                ^~~
+lu_parallel.h:157:16: warning: unused variable ‘r_8’ [-Wunused-variable]
+  157 |         __m256 r_8;
+      |                ^~~
+lu_parallel.h:158:16: warning: unused variable ‘r_9’ [-Wunused-variable]
+  158 |         __m256 r_9;
+      |                ^~~
+lu_parallel.h:159:16: warning: unused variable ‘r_10’ [-Wunused-variable]
+  159 |         __m256 r_10;
+      |                ^~~~
+lu_parallel.h:160:16: warning: unused variable ‘r_11’ [-Wunused-variable]
+  160 |         __m256 r_11;
+      |                ^~~~
+lu_parallel.h: In function ‘void lu_fmadd_forward(int, MatrixType&, Eigen::VectorXf&, Eigen::VectorXf&)’:
+lu_parallel.h:224:16: warning: unused variable ‘r_2’ [-Wunused-variable]
+  224 |         __m256 r_2;
+      |                ^~~
+lu_parallel.h:225:16: warning: unused variable ‘r_3’ [-Wunused-variable]
+  225 |         __m256 r_3;
+      |                ^~~
+lu_parallel.h:226:16: warning: unused variable ‘r_4’ [-Wunused-variable]
+  226 |         __m256 r_4;
+      |                ^~~
+lu_parallel.h:227:16: warning: unused variable ‘r_5’ [-Wunused-variable]
+  227 |         __m256 r_5;
+      |                ^~~
+lu_parallel.h:228:16: warning: unused variable ‘r_6’ [-Wunused-variable]
+  228 |         __m256 r_6;
+      |                ^~~
+lu_parallel.h:229:16: warning: unused variable ‘r_7’ [-Wunused-variable]
+  229 |         __m256 r_7;
+      |                ^~~
+lu_parallel.h:230:16: warning: unused variable ‘r_8’ [-Wunused-variable]
+  230 |         __m256 r_8;
+      |                ^~~
+lu_parallel.h:231:16: warning: unused variable ‘r_9’ [-Wunused-variable]
+  231 |         __m256 r_9;
+      |                ^~~
+lu_parallel.h:232:16: warning: unused variable ‘r_10’ [-Wunused-variable]
+  232 |         __m256 r_10;
+      |                ^~~~
+lu_parallel.h:233:16: warning: unused variable ‘r_11’ [-Wunused-variable]
+  233 |         __m256 r_11;
+      |                ^~~~

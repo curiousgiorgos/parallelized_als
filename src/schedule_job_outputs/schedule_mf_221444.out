@@ -1,0 +1,14 @@
+rm -f als_sequential als_playground als_papi  als_sequential_timing als_parallel als_parallel_nosimd
+make: `als_parallel_static' is up to date.
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma  -o als_parallel_dynamic2 als_parallel_dynamic2.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma  -o als_parallel_dynamic128 als_parallel_dynamic128.cpp
+make: `als_parallel_guided' is up to date.
+static times:\n 
+Iterations complete in 1098.08s
+Iterations complete in 567.24s
+Iterations complete in 306.44s
+Iterations complete in 167.85s
+Iterations complete in 83.91s
+Iterations complete in 44.25s
+dynamic_2 times:\n 
+Iterations complete in 1146.77s

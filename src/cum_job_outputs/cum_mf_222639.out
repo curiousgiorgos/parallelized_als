@@ -1,0 +1,91 @@
+rm -f als_sequential als_playground als_papi  als_sequential_timing als_parallel als_parallel_nosimd als_parallel_static als_parallel_dynamic2 als_parallel_dynamic128 als_parallel_guided
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel als_parallel.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_nosimd als_parallel_nosimd.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_sequential als_sequential.cpp
+sequential time: 
+Completed data load 
+Iteration: 1 RMSE: 552.445
+Iteration: 2 RMSE: 285.53
+Iteration: 3 RMSE: 222.354
+Iteration: 4 RMSE: 187.873
+Iteration: 5 RMSE: 164.626
+Iteration: 6 RMSE: 147.421
+Iteration: 7 RMSE: 133.981
+Iteration: 8 RMSE: 123.08
+Iteration: 9 RMSE: 114.012
+Iteration: 10 RMSE: 106.334
+Iterations complete in 2277.34s
+cumulative times:\n 
+Completed data load 
+Iteration: 1 RMSE: 552.445
+Iteration: 2 RMSE: 285.534
+Iteration: 3 RMSE: 222.357
+Iteration: 4 RMSE: 187.878
+Iteration: 5 RMSE: 164.629
+Iteration: 6 RMSE: 147.427
+Iteration: 7 RMSE: 133.985
+Iteration: 8 RMSE: 123.083
+Iteration: 9 RMSE: 114.014
+Iteration: 10 RMSE: 106.335
+Iterations complete in 262.75s
+Completed data load 
+Iteration: 1 RMSE: 552.529
+Iteration: 2 RMSE: 285.586
+Iteration: 3 RMSE: 222.402
+Iteration: 4 RMSE: 187.915
+Iteration: 5 RMSE: 164.666
+Iteration: 6 RMSE: 147.465
+Iteration: 7 RMSE: 134.018
+Iteration: 8 RMSE: 123.112
+Iteration: 9 RMSE: 114.043
+Iteration: 10 RMSE: 106.366
+Iterations complete in 136.97s
+Completed data load 
+Iteration: 1 RMSE: 552.565
+Iteration: 2 RMSE: 285.613
+Iteration: 3 RMSE: 222.425
+Iteration: 4 RMSE: 187.934
+Iteration: 5 RMSE: 164.685
+Iteration: 6 RMSE: 147.484
+Iteration: 7 RMSE: 134.034
+Iteration: 8 RMSE: 123.126
+Iteration: 9 RMSE: 114.059
+Iteration: 10 RMSE: 106.381
+Iterations complete in 70.89s
+Completed data load 
+Iteration: 1 RMSE: 552.579
+Iteration: 2 RMSE: 285.623
+Iteration: 3 RMSE: 222.435
+Iteration: 4 RMSE: 187.942
+Iteration: 5 RMSE: 164.693
+Iteration: 6 RMSE: 147.492
+Iteration: 7 RMSE: 134.04
+Iteration: 8 RMSE: 123.133
+Iteration: 9 RMSE: 114.066
+Iteration: 10 RMSE: 106.387
+Iterations complete in 38.77s
+Completed data load 
+Iteration: 1 RMSE: 552.587
+Iteration: 2 RMSE: 285.629
+Iteration: 3 RMSE: 222.44
+Iteration: 4 RMSE: 187.947
+Iteration: 5 RMSE: 164.697
+Iteration: 6 RMSE: 147.496
+Iteration: 7 RMSE: 134.044
+Iteration: 8 RMSE: 123.136
+Iteration: 9 RMSE: 114.069
+Iteration: 10 RMSE: 106.39
+Iterations complete in 20.43s
+Completed data load 
+Iteration: 1 RMSE: 552.591
+Iteration: 2 RMSE: 285.632
+Iteration: 3 RMSE: 222.443
+Iteration: 4 RMSE: 187.95
+Iteration: 5 RMSE: 164.699
+Iteration: 6 RMSE: 147.498
+Iteration: 7 RMSE: 134.046
+Iteration: 8 RMSE: 123.138
+Iteration: 9 RMSE: 114.071
+Iteration: 10 RMSE: 106.392
+Iterations complete in 10.43s
+parallel times:\n 

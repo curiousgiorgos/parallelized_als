@@ -1,0 +1,62 @@
+rm -f als_sequential als_playground als_papi  als_sequential_timing als_parallel als_parallel_nosimd als_parallel_static als_parallel_dynamic2 als_parallel_dynamic128 als_parallel_guided
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel als_parallel.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_nosimd als_parallel_nosimd.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_sequential als_sequential.cpp
+sequential time: 
+Completed data load 
+Iteration: 1 RMSE: 143.333
+Iteration: 2 RMSE: 39.1414
+Iteration: 3 RMSE: 17.9754
+Iteration: 4 RMSE: 9.9954
+Iteration: 5 RMSE: 6.2559
+Iterations complete in 524.07s
+cumulative times:\n 
+Completed data load 
+Iteration: 1 RMSE: 143.332
+Iteration: 2 RMSE: 39.1419
+Iteration: 3 RMSE: 17.9762
+Iteration: 4 RMSE: 9.99708
+Iteration: 5 RMSE: 6.25596
+Iterations complete in 59.84s
+Completed data load 
+Iteration: 1 RMSE: 143.335
+Iteration: 2 RMSE: 39.1438
+Iteration: 3 RMSE: 17.9776
+Iteration: 4 RMSE: 9.99799
+Iteration: 5 RMSE: 6.25666
+Iterations complete in 31.04s
+Completed data load 
+Iteration: 1 RMSE: 143.337
+Iteration: 2 RMSE: 39.1449
+Iteration: 3 RMSE: 17.9785
+Iteration: 4 RMSE: 9.99849
+Iteration: 5 RMSE: 6.25701
+Iterations complete in 16.11s
+Completed data load 
+Iteration: 1 RMSE: 143.338
+Iteration: 2 RMSE: 39.1454
+Iteration: 3 RMSE: 17.9788
+Iteration: 4 RMSE: 9.99869
+Iteration: 5 RMSE: 6.25712
+Iterations complete in 8.79s
+Completed data load 
+Iteration: 1 RMSE: 143.339
+Iteration: 2 RMSE: 39.1457
+Iteration: 3 RMSE: 17.9789
+Iteration: 4 RMSE: 9.99876
+Iteration: 5 RMSE: 6.25716
+Iterations complete in 4.72s
+Completed data load 
+Iteration: 1 RMSE: 143.339
+Iteration: 2 RMSE: 39.1459
+Iteration: 3 RMSE: 17.979
+Iteration: 4 RMSE: 9.99881
+Iteration: 5 RMSE: 6.25719
+Iterations complete in 2.43s
+parallel times:\n 
+Iterations complete in 550.87s
+Iterations complete in 247.84s
+Iterations complete in 136.44s
+Iterations complete in 73.78s
+Iterations complete in 38.36s
+Iterations complete in 19.68s

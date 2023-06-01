@@ -1,0 +1,22 @@
+rm -f als_sequential als_playground als_papi  als_sequential_timing als_parallel als_parallel_nosimd als_parallel_static als_parallel_dynamic2 als_parallel_dynamic128 als_parallel_guided
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_dynamic2 als_parallel_dynamic2.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_dynamic128 als_parallel_dynamic128.cpp
+g++ -O3 -Wall -fopenmp -msse -msse2 -msse3 -DNDEBUG -mavx2 -mfma -march=native  -o als_parallel_guided als_parallel_guided.cpp
+static times:\n 
+Iterations complete in 565.11s
+Iterations complete in 312.81s
+Iterations complete in 149.78s
+Iterations complete in 76.59s
+Iterations complete in 39.38s
+dynamic_128 times:\n 
+Iterations complete in 578.33s
+Iterations complete in 317.81s
+Iterations complete in 175.40s
+Iterations complete in 101.20s
+Iterations complete in 72.83s
+guided_16 times:\n 
+Iterations complete in 544.07s
+Iterations complete in 301.16s
+Iterations complete in 160.65s
+Iterations complete in 80.82s
+Iterations complete in 42.36s

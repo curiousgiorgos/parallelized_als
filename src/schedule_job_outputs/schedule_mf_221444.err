@@ -1,0 +1,9 @@
+als_parallel_dynamic2.cpp: In function ‘int main(int, char**)’:
+als_parallel_dynamic2.cpp:31:9: warning: unused variable ‘nthreads’ [-Wunused-variable]
+   31 |     int nthreads = omp_get_num_threads();
+      |         ^~~~~~~~
+als_parallel_dynamic128.cpp: In function ‘int main(int, char**)’:
+als_parallel_dynamic128.cpp:31:9: warning: unused variable ‘nthreads’ [-Wunused-variable]
+   31 |     int nthreads = omp_get_num_threads();
+      |         ^~~~~~~~
+slurmstepd: error: *** JOB 221444 ON holy7c19210 CANCELLED AT 2023-05-02T18:39:32 DUE TO TIME LIMIT ***
