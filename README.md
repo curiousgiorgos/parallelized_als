@@ -3,7 +3,7 @@
 
 ## Description 
 
-Implementation of a Parallelized Matrix Factorizatio Algorithm with OpenMP on shared Memory and AVX2 for SIMD Vectorization 
+Implementation of a Parallelized Matrix Factorization Algorithm with OpenMP on shared Memory and AVX2 for SIMD Vectorization 
 
 ## Prerequisites 
 
